@@ -1,0 +1,30 @@
+
+### Add first book
+POST http://localhost:8081/books
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Java Programming",
+  "author": "James Gosling",
+  "category": "Programming",
+  "availableCopies": 10
+}
+
+### 2. GET - Retrieve All Books
+GET http://localhost:8081/books
+
+### Update book with ID 1
+PUT http://localhost:8081/books/1
+Content-Type: application/json
+
+{
+  "title": "Advanced Java Programming",
+  "author": "James Gosling",
+  "category": "Computer Science",
+  "availableCopies": 20
+}
+
+
+### Delete book with ID 1
+DELETE http://localhost:8081/books/1
